@@ -1,6 +1,6 @@
 ﻿using System;
 
-void minFunct(ref int a, ref int b)
+void minFunct(ref int a, ref int b)//try to use pascal notation for the void names
 {
     int temp = 0;
     temp = a;
@@ -90,7 +90,7 @@ Console.WriteLine("SelectionSort");
 arr = new int[] { 9, 5, 2, 1, 4, 0, 8, 0, 3, 6, 7, 5, 8 };
 InsertionSort(arr);
 for (int i = 0; i < arr.Length; i++) Console.Write(arr[i] + " ");
-
+//it would be better to make the voids realization in area, below the main code
 void Sort(int[] arr, SortAlgorithmType AlgorithmType, OrderBy OrderType)
 {
     if (AlgorithmType == SortAlgorithmType.BubbleSort) BubbleSort(arr);
@@ -129,3 +129,4 @@ public enum OrderBy
     asc,
     desc
 }
+//checked
